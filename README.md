@@ -1,2 +1,2 @@
 # fairsharer
-distribute Values over time
+distribute Values
