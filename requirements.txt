@@ -1,0 +1,6 @@
+Welcome if you want to use my fairsharer.
+You only need few Libaries.
+With "pip install Libariename" in Anaconda you can install these Libaries.
+
+1. ruff 
+2. pytest
