@@ -18,7 +18,7 @@ def fair_sharer(values, num_iterations, share=0.1):
         values[max_value_idx + 1] = right_neighbor #Update value for right neighbor of the highest value
         values[max_value_idx] = new_max_value
         
-    return print(values)
+    return values
 
-fair_sharer([0, 1000, 800, 0], 1) # [100, 800, 900, 0]
-fair_sharer([0, 1000, 800, 0], 2) # [100, 890, 720, 90]
+print(fair_sharer([0, 1000, 800, 0], 1)) # [100, 800, 900, 0]
+print(fair_sharer([0, 1000, 800, 0], 2)) # [100, 890, 720, 90]
