@@ -9,8 +9,13 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest, windows-latest, macos-latest]
-          
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.version }}
+        
+  runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
     - name: Set up Python
